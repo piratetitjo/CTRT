@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang='fr'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Paramètre réveil</title>
+        <link rel="stylesheet" type="text/css" href="reveil.css">
+        <script type="text/javascript" src="reveil.js"></script>
+    </head>
+    <body onload="setup()">
+        <div id='zoneRota'>
+            <div class='face'>
+                <input  type='password' id='zone_mot_de_passe'class="identifient" placeholder='Entrez votre code'>
+                <input id="voir_mot_de_passe" type="checkbox" onclick="afficher_mot_de_passe()" />
+                <button id='bouton' type='' onclick='verifier_code()'class="identifient">Envoyer mot de passe</button>
+            </div>
+            <div class='back face'>
+                <input type='button' value='retour' onclick='rotation3D()'>
+                <h1>Réveil</h1>
+                <h2>Week-end</h2>
+                <div class='ajouter'>
+                    <a onclick="change_value_weekend_reveil()" class='plus bouton' >+</a>
+                    <h3 id="r_weekend">non</h3>
+                    <a onclick="change_value_weekend_reveil()" class='moins bouton'>-</a>
+                </div>
+                <h2>Heure</h2>
+                <div class='ajouter'>
+                    <a onclick="ogmenter_heure_reveil()" class='plus bouton' >+</a>
+                    <h3 id="r_heure">0</h3>
+                    <a onclick="diminuer_heure_reveil()" class='moins bouton'>-</a>
+                </div>
+                <h2>Minute</h2>
+                <div class='ajouter'>
+                    <a onclick="ogmenter_minute_reveil()" class='plus bouton' >+</a>
+                    <h3 id="r_minute">0</h3>
+                    <a onclick="diminuer_minute_reveil()" class='moins bouton'>-</a>
+                </div>
+                <h2>Réveil</h2>
+                <div class='ajouter'>
+                    <a onclick="change_value_active_reveil()" class='plus bouton' >+</a>
+                    <h3 id="r_active">non</h3>
+                    <a onclick="change_value_active_reveil()" class='moins bouton'>-</a>
+                </div>
+                <h1>Lampe soir</h1>
+                <h2>Week-end</h2>
+                <div class='ajouter'>
+                    <a onclick="change_value_weekend_lampe()" class='plus bouton' >+</a>
+                    <h3 id="l_weekend">non</h3>
+                    <a onclick="change_value_weekend_lampe()" class='moins bouton'>-</a>
+                </div>
+                <h2>Heure</h2>
+                <div class='ajouter'>
+                    <a onclick="ogmenter_heure_lampe()" class='plus bouton' >+</a>
+                    <h3 id="l_heure">0</h3>
+                    <a onclick="diminuer_heure_lampe()" class='moins bouton'>-</a>
+                </div>
+                <h2>Minute</h2>
+                <div class='ajouter'>
+                    <a onclick="ogmenter_minute_lampe()" class='plus bouton' >+</a>
+                    <h3 id="l_minute">0</h3>
+                    <a onclick="diminuer_minute_lampe()" class='moins bouton'>-</a>
+                </div>
+                <h2>Éteindre lampe soir</h2>
+                <div class='ajouter'>
+                    <a onclick="change_value_active_lampe()" class='plus bouton' >+</a>
+                    <h3 id="l_active">non</h3>
+                    <a onclick="change_value_active_lampe()" class='moins bouton'>-</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
