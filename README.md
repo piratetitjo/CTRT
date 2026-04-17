@@ -61,7 +61,7 @@
     - Pour allumer ou éteindre le radiateur, changez l'interrupteur de valeur.
 
 - ### Schéma de branchement :
-    ![](/shema_des_broches.png "Shema des roches")
+    ![](/shema_des_broches.png "Shema des broches")
 - ## Sources  : 
     Ce projet à été réalisé grace aux vidéos de la chaine Tommy Desrochers.\
     Lien vers sa chaine : [Tommy Desrochers](https://www.youtube.com/@TD72PRO)\
