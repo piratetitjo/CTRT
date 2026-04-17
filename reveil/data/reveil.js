@@ -10,6 +10,7 @@ let oui_non=['non','oui'];
 let mon_code_secret="Joan";
 let reponse;
 let etat_zonne_texte=1;
+let code_juste=false;
 // true pour face, false pour dos.
 
 let face= true;
@@ -27,26 +28,31 @@ function afficher_mot_de_passe(){
 }
 // rotation effectuée en ajoutant la class rota.
 function rotation3D() {
-    let zone = document.getElementById('zoneRota');
-    let zone_de_texte = document.getElementById('zone_mot_de_passe');
-    let bouton = document.getElementById('bouton');
-    let check = document.getElementById('voir_mot_de_passe');
-    if (face) {
-        zone.className = 'rota';
-        zone_de_texte.style.display = 'none';
-        bouton.style.display = 'none';
-        check.style.display = 'none';
-        zone_de_texte.value='';
-    }
+    if(code_juste){
+        let zone = document.getElementById('zoneRota');
+        let zone_de_texte = document.getElementById('zone_mot_de_passe');
+        let bouton = document.getElementById('bouton');
+        let check = document.getElementById('voir_mot_de_passe');
+        if (face) {
+            zone.className = 'rota';
+            zone_de_texte.style.display = 'none';
+            bouton.style.display = 'none';
+            check.style.display = 'none';
+            zone_de_texte.value='';
+        }
 
-    else {
-        zone.className = '';
-        zone_de_texte.style.display = 'inline';
-        bouton.style.display = 'inline';
-        check.style.display = 'inline';
+        else {
+            zone.className = '';
+            zone_de_texte.style.display = 'inline';
+            bouton.style.display = 'inline';
+            check.style.display = 'inline';
+        }
+        face = !face;
+        setup();
     }
-    face = !face;
-    setup();
+    else{
+        alert("gruge détecté");
+    }
 }
 function verifier_code(){
     let zone_de_texte_valeur = document.getElementById('zone_mot_de_passe').value;
@@ -57,12 +63,17 @@ function verifier_code(){
         if (this.readyState ==4 && this.status==200){
             reponse=this.responseText;
             if(zone_de_texte_valeur==reponse){
+                code_juste=true;
                 rotation3D();
-            }                
+
+            }
+            reponse="gruge détectée";   
         }
     };
     xhttp.open("GET", "mot_de_passe", true);
     xhttp.send();
+    code_juste=false;
+    
 }
             
 // let body=document.getElementsByTagName("body");
