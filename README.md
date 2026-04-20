@@ -1,4 +1,4 @@
-# <div style="text-align:center">Reveil</div>
+# <div style="text-align:center">CTRT (C(ouche)T(oi)R(éveil)T(oi))</div>
 # :warning: **<span style="color : red"> Ce montage contient du 220V</span>**
 <!-- [Comment ça fonctionne](#comment-ça-fonctionne-)\
 [Au démarage](#au-démarage-)\
@@ -6,12 +6,12 @@
 [Comment utiliser le site internet ?](#comment-utiliser-le-site-internet-)\
 [Comment utiliser le reveil et la lampe ?](#comment-utiliser-le-reveil- sc et-la-lampe-)\
 [Shéma de branchementvdfv :](#shéma-de-branchement-)\
-[Sources](#sources--)\ -->À quoi sert ce programe pour le mode réveil :
+[Sources](#sources--)\ -->À quoi sert le programe du CTRT pour le mode réveil :
 - Il sert à mettre un **réveil** grâce à un site internet
 - Il sert également à **éteindre une lumière** branchée sur secteur à l'heure voulue
 - Il sert aussi à allumer et éteindre la lampe de chevet
 
-À quoi sert ce programe pour le mode radiateur:
+À quoi sert le programe du CTRT pour le mode radiateur:
 - Il sert à programer un radiateur d'apoint grâce à un site internet
 - Il sert également à éteindre ou allumer manuellement le radiateur
 
@@ -69,7 +69,7 @@
     Merci à lui.\
     [Tutoriel module relais](https://www.moussasoft.com/relais-avec-arduino/)
 ## Variante :
-Je me suis rendu compte que cela pouvait m'aider pour l'hiver dans ma chambre, lorsqu'on installait un chauffage d'appoint. Je peux installer le même montage que sur le TITRE en enlevant juste le buzzer et à la place de la lampe, mettre le radiateur. J'ai un petit peu modifié le code pour qu'il puisse s'allumer et s'éteindre à une heure dite. À l'avenir, j'aimerais installer un thermomètre pour qu'il arrête de chauffer à partir d'une température donnée.
+Je me suis rendu compte que cela pouvait m'aider pour l'hiver dans ma chambre, lorsqu'on installait un chauffage d'appoint. Je peux installer le même montage que sur le CTRT en enlevant juste le buzzer et à la place de la lampe, mettre le radiateur. J'ai un petit peu modifié le code pour qu'il puisse s'allumer et s'éteindre à une heure dite. À l'avenir, j'aimerais installer un thermomètre pour qu'il arrête de chauffer à partir d'une température donnée.
 ## Lien vers les produits utilisés :
 - [ESP32](https://www.atelierdelarobotique.fr/produit/carte-de-developpement-esp32-devkitc-avec-module-esp32-wroom-32-wifi-et-bluetooth-integres-compatible-arduino)
 - [Module relais 3V3](https://www.cdiscount.com/bricolage/electricite/module-relais-3-1-module-relais-accessoires-de-con/f-1661416-vvi1688442892586.html#mpos=1|mp) :warning: Bien isoler les soudures apparentes avant de le brancher !!! Ne pas poser sur une surface conductrice !!!
