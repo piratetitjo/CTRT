@@ -7,7 +7,7 @@ let heure_lampe_soir=0;
 let minute_lampe_soir=0;
 let weekend_active_reveil=0;
 let oui_non=['non','oui'];
-let mon_code_secret="Joan";
+let mon_code_secret="";
 let reponse;
 let etat_zonne_texte=1;
 let code_juste=false;
